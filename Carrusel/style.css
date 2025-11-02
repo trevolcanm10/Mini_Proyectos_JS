@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+
+.carrusel-container{
+    max-width: 400px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.review{
+    width: 100%;
+    padding: 20px;
+}
+
+.review img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+button{
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #007bff;
+    transition: 0.3s;
+}
+
+button:hover{
+    color: #0056b3;
+}
