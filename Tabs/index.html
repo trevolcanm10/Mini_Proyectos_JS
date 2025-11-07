@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Pestañas Interactivas</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Pestañas con JavaScript</h1>
+
+    <!--Botones de pestañas-->
+        <div class="tabs">
+            <button class="tab active" data-tab="tab1">Inicio</button>
+            <button class="tab" data-tab="tab2">Servicios</button>
+            <button class="tab" data-tab="tab3">Contacto</button>
+        </div>
+
+    <!--Contenido de cada pestaña-->
+
+        <div class="contenido">
+            <div class="tab-content active" id="tab1">
+                <h2>Bienvenido</h2>
+                <p>Esta es la pestaña de inicio, donde puedes ver información general.</p>
+            </div>
+
+            <div class="tab-content" id="tab2">
+                <h2>Nuestros servicios</h2>
+                <p>Ofrecemos soluciones web, diseño UI/UX y desarrollo full stack.</p>            
+            </div>
+
+
+            <div class="tab-content" id="tab3">
+                <h2>Contacto</h2>
+                <p>Puedes escribirnos a <strong>info@misitio.com</strong> o completar el formulario</p>
+            </div>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

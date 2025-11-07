@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor{
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    background: #2196f3;
+    color: white;
+}
+
+/* Estilos de pestañas */
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    background: #e0e0e0;
+}
+
+.tab{
+    flex:1;
+    padding: 15px 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.tab:hover{
+    background: #d0d0d0;
+}
+
+.tab.active{
+    background: #2196f3;
+    color: white;
+}
+
+/*Contenido de pestañas*/
+.contenido{
+    padding: 20px;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active{
+    display: block;
+    animation: fade 0.4s ease;
+}
+
+/*Animación suave */
+@keyframes fade {
+    from{ opacity: 0; transform: translateY(10px);}
+    to{opacity: 1; transform: translateY(0);}
+}
